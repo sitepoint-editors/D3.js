@@ -1,5 +1,5 @@
 {
-  "name": "github-issues",
+  "name": "issues-visualization",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,14 +9,19 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "bootstrap-vue": "^2.0.0-rc.11",
     "d3": "^5.7.0",
-    "moment": "^2.22.2",
+    "lodash": "^4.17.11",
+    "moment": "^2.23.0",
     "vue": "^2.5.17"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.0.5",
-    "@vue/cli-plugin-eslint": "^3.0.5",
-    "@vue/cli-service": "^3.0.5",
+    "@vue/cli-plugin-babel": "^3.2.0",
+    "@vue/cli-plugin-eslint": "^3.2.0",
+    "@vue/cli-service": "^3.2.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.8.0",
+    "eslint-plugin-vue": "^5.0.0-0",
     "vue-template-compiler": "^2.5.17"
   },
   "eslintConfig": {
@@ -28,7 +33,9 @@
       "plugin:vue/essential",
       "eslint:recommended"
     ],
-    "rules": {},
+    "rules": {
+      "no-console": 0
+    },
     "parserOptions": {
       "parser": "babel-eslint"
     }
